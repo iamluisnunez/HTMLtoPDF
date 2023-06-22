@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Page To PDF</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form id="myForm">
-      <label for="url-input">Enter URL:</label>
-      <input
-        type="text"
-        id="url-input"
-        class="url-input"
-        placeholder="https://www.example.com"
-      />
-      <input type="submit" value="Submit" class="submit-button" />
-    </form>
+    <div class="container">
+      <h1>Convert a website into a PDF</h1>
+      <form id="myForm">
+        <label for="url-input">Enter URL:</label>
+        <input
+          type="text"
+          id="url-input"
+          class="url-input"
+          placeholder="https://www.example.com"
+        />
+        <input type="submit" value="Submit" class="submit-button" />
+      </form>
+      <div id="error-message"></div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>

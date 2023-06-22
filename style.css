@@ -1,3 +1,7 @@
+body {
+  background-color: #42b0f5;
+  overflow: hidden;
+}
 .url-input {
   width: 300px;
   height: 30px;
@@ -7,4 +11,15 @@
 
 .submit-button {
   margin-top: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.myForm {
+  text-align: center;
 }
