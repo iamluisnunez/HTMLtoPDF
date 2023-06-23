@@ -38,6 +38,8 @@ submitButton.addEventListener("click", async function (e) {
       // Handle other types of responses
       const data = await response.json();
       console.log(data);
+      displayerror(data.error.info);
+      console.log(data.error.info);
     }
   } catch (error) {
     // Handle any errors
@@ -51,7 +53,12 @@ submitButton.addEventListener("click", async function (e) {
 });
 
 function displayerror(message) {
-  errorMessage.textContent = message;
+  const partyDetailsElement = document.createElement("div");
+  partyDetailsElement.classList.add("errorMessage");
+  partyDetailsElement.innerHTML = `
+      <h2>${message}</h2>
+    `;
+  errorMessage.appendChild(partyDetailsElement);
 }
 function clearError() {
   errorMessage.textContent = "";

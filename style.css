@@ -1,16 +1,35 @@
 body {
   background-color: #42b0f5;
   overflow: hidden;
+  font-family: Arial, sans-serif;
 }
 .url-input {
   width: 300px;
   height: 30px;
   font-size: 16px;
   padding: 5px;
+  border-radius: 0.5rem;
 }
 
 .submit-button {
-  margin-top: 10px;
+  background-color: #a833c5;
+
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #8e2ba7;
 }
 .container {
   display: flex;
@@ -22,4 +41,12 @@ body {
 
 .myForm {
   text-align: center;
+}
+
+.errorMessage {
+  margin-top: 3rem;
+  color: #d40404;
+}
+.urlText {
+  font-size: 22px;
 }
