@@ -34,6 +34,7 @@ submitButton.addEventListener("click", async function (e) {
 
       // Clean up the URL object
       URL.revokeObjectURL(url);
+      displaySuccess();
     } else {
       // Handle other types of responses
       const data = await response.json();
@@ -57,6 +58,14 @@ function displayerror(message) {
   partyDetailsElement.classList.add("errorMessage");
   partyDetailsElement.innerHTML = `
       <h2>${message}</h2>
+    `;
+  errorMessage.appendChild(partyDetailsElement);
+}
+function displaySuccess() {
+  const partyDetailsElement = document.createElement("div");
+  partyDetailsElement.classList.add("successMessage");
+  partyDetailsElement.innerHTML = `
+      <h2>Your PDF has been downloaded!</h2>
     `;
   errorMessage.appendChild(partyDetailsElement);
 }

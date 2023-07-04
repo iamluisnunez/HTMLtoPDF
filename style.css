@@ -50,3 +50,6 @@ body {
 .urlText {
   font-size: 22px;
 }
+.successMessage {
+  color: rgb(1, 138, 1);
+}
