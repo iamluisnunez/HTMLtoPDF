@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
-    <link rel="stylesheet" href="login.css" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Login</h1>
-      <form id="myForm">
+      <div class="goBack"><a href="login.html">Go Back</a></div>
+      <h1>Sign Up</h1>
+      <form id="signup-form">
         <div class="form-group">
           <label for="username">Username:</label>
-          <input type="text" id="username" placeholder="Enter your username" />
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter your username"
+            required
+          />
         </div>
         <div class="form-group">
           <label for="password">Password:</label>
@@ -21,17 +27,22 @@
             type="password"
             id="password"
             placeholder="Enter your password"
+            required
           />
         </div>
         <div class="form-group">
-          <button id="submit" type="submit">Login</button>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
         </div>
-        <div id="error-message"></div>
-        <div class="signup">
-          <a href="signup.html"> Sign Up Here</a>
+        <div class="form-group">
+          <button type="submit">Sign Up</button>
         </div>
       </form>
     </div>
-    <script src="login.js"></script>
   </body>
 </html>

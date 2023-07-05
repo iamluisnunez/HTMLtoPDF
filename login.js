@@ -33,7 +33,7 @@ function displayerror() {
   const partyDetailsElement = document.createElement("div");
   partyDetailsElement.classList.add("errorMessage");
   partyDetailsElement.innerHTML = `
-      <h2>Incorrect Credentials</h2>
+      <p>Incorrect Credentials</p>
     `;
   errorMessage.appendChild(partyDetailsElement);
 }
